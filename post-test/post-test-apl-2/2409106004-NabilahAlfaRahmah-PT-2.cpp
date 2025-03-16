@@ -205,6 +205,7 @@ int main() {
                 default:
                     cout << "Pilihan tidak valid!\n";
             }
+            cout << "\nTekan Enter untuk melanjutkan...";
         } while (pilihan != 5);
 
         cout << "Apakah Anda ingin mengulang program? (y/n): ";
