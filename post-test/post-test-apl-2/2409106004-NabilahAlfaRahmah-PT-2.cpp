@@ -18,9 +18,9 @@ int jumlah = 0;
 int main() {
     char ulang;
     do {
-        cout << "=============\n";
-        cout << "|| SIGN IN ||\n";
-        cout << "=============\n";
+        cout << "=============================================\n";
+        cout << "|| MANAJEMEN DAFTAR DRAMA KOREA DI NETFLIX ||\n";
+        cout << "=============================================\n";
         string username = "Nabilah Alfa Rahmah";
         string password = "2409106004";
         string nama, nim;
@@ -93,14 +93,14 @@ int main() {
                         cout << "\nDaftar Drama Korea:\n";
                         cout << left << setw(5) << "No"
                             << setw(25) << "Judul"
-                            << setw(15) << "Genre"
+                            << setw(25) << "Genre"
                             << setw(10) << "Tahun"
                             << setw(10) << "Rating" << endl;
 
                         for (int i = 0; i < jumlah; i++) {
                             cout << left << setw(5) << i + 1
                                 << setw(25) << data_drakor[i][0]
-                                << setw(15) << data_drakor[i][1]
+                                << setw(25) << data_drakor[i][1]
                                 << setw(10) << data_drakor[i][2]
                                 << setw(10) << stof(data_drakor[i][3]) << endl;
                         }
@@ -115,14 +115,14 @@ int main() {
                         cout << "\nDaftar Drama Korea Sebelum Diperbarui:\n";
                         cout << left << setw(5) << "No"
                             << setw(25) << "Judul"
-                            << setw(15) << "Genre"
+                            << setw(25) << "Genre"
                             << setw(10) << "Tahun"
                             << setw(10) << "Rating" << endl;
 
                         for (int i = 0; i < jumlah; i++) {
                             cout << left << setw(5) << i + 1
                                 << setw(25) << data_drakor[i][0]
-                                << setw(15) << data_drakor[i][1]
+                                << setw(25) << data_drakor[i][1]
                                 << setw(10) << data_drakor[i][2]
                                 << setw(10) << stof(data_drakor[i][3]) << endl;
                         }
@@ -163,14 +163,14 @@ int main() {
                         cout << "\nDaftar Drama Korea Sebelum Dihapus:\n";
                         cout << left << setw(5) << "No"
                             << setw(25) << "Judul"
-                            << setw(15) << "Genre"
+                            << setw(25) << "Genre"
                             << setw(10) << "Tahun"
                             << setw(10) << "Rating" << endl;
 
                         for (int i = 0; i < jumlah; i++) {
                             cout << left << setw(5) << i + 1
                                 << setw(25) << data_drakor[i][0]
-                                << setw(15) << data_drakor[i][1]
+                                << setw(25) << data_drakor[i][1]
                                 << setw(10) << data_drakor[i][2]
                                 << setw(10) << stof(data_drakor[i][3]) << endl;
                         }
@@ -205,7 +205,7 @@ int main() {
                 default:
                     cout << "Pilihan tidak valid!\n";
             }
-            cout << "\nTekan Enter untuk melanjutkan...";
+
         } while (pilihan != 5);
 
         cout << "Apakah Anda ingin mengulang program? (y/n): ";
