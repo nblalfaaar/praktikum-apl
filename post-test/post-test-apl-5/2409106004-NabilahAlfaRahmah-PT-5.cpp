@@ -171,7 +171,7 @@ bool login_user(Data *dt, string &user_sekarang) {
         }
     }
     
-    cout << "Anda telah aggal login 3 kali. Program berhenti.\n";
+    cout << "Anda telah gagal login 3 kali. Program berhenti.\n";
     return false;
 }
 
@@ -277,7 +277,7 @@ int main() {
             cin >> ulang;
             cin.ignore();
             if (ulang != 'y' && ulang != 'Y' && ulang != 'n' && ulang != 'N') {
-                cout << "Input tidal valid! Masukkan 'y' untuk ya atau 'n' untuk tidak.\n";
+                cout << "Input tidak valid! Masukkan 'y' untuk ya atau 'n' untuk tidak.\n";
             }
         } while (ulang != 'y' && ulang != 'Y' && ulang != 'n' && ulang != 'N');
     } while (ulang == 'y' || ulang == 'Y');
